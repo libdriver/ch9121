@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver CH9121
- * @brief     libdriver ch9121 is a full function driver of ch9121 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver CH9121 is a full function driver of CH9121 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
