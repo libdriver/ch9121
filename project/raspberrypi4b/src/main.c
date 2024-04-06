@@ -482,8 +482,8 @@ uint8_t ch9121(uint8_t argc, char **argv)
     else if (strcmp("p", type) == 0)
     {
         /* print pin connection */
-        ch9121_interface_debug_print("ch9121: TX connected to GPIO14(BCM).\n");
-        ch9121_interface_debug_print("ch9121: RX connected to GPIO15(BCM).\n");
+        ch9121_interface_debug_print("ch9121: TX connected to GPIO15(BCM).\n");
+        ch9121_interface_debug_print("ch9121: RX connected to GPIO14(BCM).\n");
         
         return 0;
     }
