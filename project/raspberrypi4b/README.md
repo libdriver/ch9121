@@ -156,7 +156,6 @@ find_package(ch9121 REQUIRED)
 ```shell
 ./ch9121 -i
 
-ch9121: welcome to libdriver ch9121.
 ch9121: chip is WCH CH9121.
 ch9121: manufacturer is WCH.
 ch9121: interface is UART.
@@ -171,8 +170,8 @@ ch9121: min temperature is -40.0C.
 ```shell
 ./ch9121 -p
 
-ch9121: TX connected to GPIO14(BCM).
-ch9121: RX connected to GPIO15(BCM).
+ch9121: TX connected to GPIO15(BCM).
+ch9121: RX connected to GPIO14(BCM).
 ```
 
 ```shell
@@ -305,7 +304,6 @@ ch9121: finish register test.
 ```shell
 ./ch9121 -t net --mode=TCP_CLIENT
 
-ch9121: welcome to libdriver ch9121.
 ch9121: chip is WCH CH9121.
 ch9121: manufacturer is WCH.
 ch9121: interface is UART.
