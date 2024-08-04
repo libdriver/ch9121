@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/ch9121/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-CH9121是一款網絡串口透傳晶片。 CH9121內部集成TCP/IP協議棧，可實現網絡數据包和串口數據的雙向透明傳輸，具有TCP CLIENT、TCP SERVER、UDP CLIENT、UDP SERVER 4種工作模式，串口串列傳輸速率最高可支持到921600bps，可通過上位機軟件或者串口命令輕鬆配寘，方便快捷。
+CH9121是一款網絡串口透傳晶片。 CH9121內部集成TCP/IP協議棧，可實現網絡數据包和串口數據的雙向透明傳輸，具有TCP CLIENT、TCP SERVER、UDP CLIENT、UDP SERVER4種工作模式，串口串列傳輸速率最高可支持到921600bps，可通過上位機軟件或者串口命令輕鬆配寘，方便快捷。
 
 LibDriver CH9121是LibDriver推出的CH9121全功能驅動，該驅動提供TCP服務器、TCP用戶端、UDP服務器、UDP用戶端等功能並且它符合MISRA標準。
 
