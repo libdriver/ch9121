@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/ch9121/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-CH9121是一款网络串口透传芯片。CH9121 内部集成 TCP/IP 协议栈，可实现网络数据包和串 口数据的双向透明传输，具有 TCP CLIENT、TCP SERVER、UDP CLIENT 、UDP SERVER 4 种工作 模式，串口波特率最高可支持到 921600bps，可通过上位机软件或者串口命令轻松配置，方便快捷。
+CH9121是一款网络串口透传芯片。CH9121内部集成TCP/IP协议栈，可实现网络数据包和串口数据的双向透明传输，具有TCP CLIENT、TCP SERVER、UDP CLIENT、UDP SERVER4 种工作模式，串口波特率最高可支持到 921600bps，可通过上位机软件或者串口命令轻松配置，方便快捷。
 
 LibDriver CH9121是LibDriver推出的CH9121全功能驱动，该驱动提供TCP服务器、TCP客户端、UDP服务器、UDP客户端等功能并且它符合MISRA标准。
 
