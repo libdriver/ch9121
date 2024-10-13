@@ -110,6 +110,14 @@ static uint8_t a_uart_config(int fd, uint32_t baud_rate, uint8_t data_bits, char
             break;
         }
         
+        /* 57600bps */
+        case 57600 :
+        {
+            speed = B57600;
+            
+            break;
+        }
+
         /* 115200bps */
         case 115200 :
         {
@@ -312,6 +320,11 @@ uint8_t uart_init(char *name, int *fd, uint32_t baud_rate, uint8_t data_bits, ch
     }
     else
     {
+        /* control no block */
+        int flags = fcntl(*fd, F_GETFL, 0);
+        flags |= O_NONBLOCK;
+        fcntl(*fd, F_SETFL, flags);
+        
         /* default settings */
         return a_uart_config(*fd, baud_rate, data_bits, parity, stop_bits);
     }

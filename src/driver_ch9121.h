@@ -60,7 +60,7 @@ extern "C"{
  * @brief ch9121 uart pre delay definition
  */
 #ifndef CH9121_UART_PRE_DELAY
-    #define CH9121_UART_PRE_DELAY    10        /**< 10ms */
+    #define CH9121_UART_PRE_DELAY    50        /**< 50ms */
 #endif
 
 /**
