@@ -85,8 +85,8 @@ uint8_t ch9121_basic_deinit(void);
 
 /**
  * @brief         basic example read data
- * @param[out]    *buf points to a data buffer
- * @param[in,out] *len points to a length buffer
+ * @param[out]    *buf pointer to a data buffer
+ * @param[in,out] *len pointer to a length buffer
  * @return        status code
  *                - 0 success
  *                - 1 read failed
@@ -96,8 +96,8 @@ uint8_t ch9121_basic_read(uint8_t *buf, uint16_t *len);
 
 /**
  * @brief     basic example write data
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -107,14 +107,14 @@ uint8_t ch9121_basic_write(uint8_t *buf, uint16_t len);
 
 /**
  * @brief     basic example config
- * @param[in] uart_port is the uart port
- * @param[in] mode is the set mode
- * @param[in] *ip points to an ip buffer
- * @param[in] port is the local port
- * @param[in] *mask points to a mask buffer
- * @param[in] *gateway points to a gateway buffer
- * @param[in] *dest_ip points to a dest ip buffer
- * @param[in] dest_port is the dest port
+ * @param[in] uart_port uart port
+ * @param[in] mode chip mode
+ * @param[in] *ip pointer to an ip buffer
+ * @param[in] port local port
+ * @param[in] *mask pointer to a mask buffer
+ * @param[in] *gateway pointer to a gateway buffer
+ * @param[in] *dest_ip pointer to a dest ip buffer
+ * @param[in] dest_port dest port
  * @return    status code
  *            - 0 success
  *            - 1 config failed

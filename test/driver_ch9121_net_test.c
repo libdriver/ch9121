@@ -40,8 +40,8 @@ static ch9121_handle_t gs_handle;        /**< ch9121 handle */
 
 /**
  * @brief     net test
- * @param[in] mode is the net mode
- * @param[in] timeout in ms
+ * @param[in] mode net mode
+ * @param[in] timeout timeout in ms
  * @return    status code
  *            - 0 success
  *            - 1 test failed

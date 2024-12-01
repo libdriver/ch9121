@@ -114,11 +114,11 @@
 
 /**
  * @brief     write and check
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] *param points to a param buffer
- * @param[in] len is the param len
- * @param[in] pre_delay is the pre delay in ms
- * @param[in] timeout is the wait timeout in ms
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] *param pointer to a param buffer
+ * @param[in] len param length
+ * @param[in] pre_delay delay in ms
+ * @param[in] timeout timeout in ms
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -189,13 +189,13 @@ static uint8_t a_ch9121_write_check(ch9121_handle_t *handle,
 
 /**
  * @brief      write and read
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  *param points to a param buffer
- * @param[in]  len is the param len
- * @param[out] *out points to an out buffer
- * @param[in]  out_len is the out len
- * @param[in]  pre_delay is the pre delay in ms
- * @param[in]  timeout is the wait timeout in ms
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  *param pointer to a param buffer
+ * @param[in]  len param length
+ * @param[out] *out pointer to an out buffer
+ * @param[in]  out_len output length
+ * @param[in]  pre_delay delay in ms
+ * @param[in]  timeout timeout in ms
  * @return     status code
  *             - 0 success
  *             - 1 write failed
@@ -264,8 +264,8 @@ static uint8_t a_ch9121_write_read(ch9121_handle_t *handle,
 
 /**
  * @brief      get version
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[out] *version points to a version buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[out] *version pointer to a version buffer
  * @return     status code
  *             - 0 success
  *             - 1 get version failed
@@ -298,7 +298,7 @@ uint8_t ch9121_get_version(ch9121_handle_t *handle, uint8_t *version)
 
 /**
  * @brief     reset the chip
- * @param[in] *handle points to a ch9121 handle structure
+ * @param[in] *handle pointer to a ch9121 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 reset failed
@@ -332,7 +332,7 @@ uint8_t ch9121_reset(ch9121_handle_t *handle)
 
 /**
  * @brief     save to eeprom
- * @param[in] *handle points to a ch9121 handle structure
+ * @param[in] *handle pointer to a ch9121 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 save to eeprom failed
@@ -365,7 +365,7 @@ uint8_t ch9121_save_to_eeprom(ch9121_handle_t *handle)
 
 /**
  * @brief     config and reset the chip
- * @param[in] *handle points to a ch9121 handle structure
+ * @param[in] *handle pointer to a ch9121 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 config and reset failed
@@ -399,7 +399,7 @@ uint8_t ch9121_config_and_reset(ch9121_handle_t *handle)
 
 /**
  * @brief     exit
- * @param[in] *handle points to a ch9121 handle structure
+ * @param[in] *handle pointer to a ch9121 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 exit failed
@@ -432,8 +432,8 @@ uint8_t ch9121_exit(ch9121_handle_t *handle)
 
 /**
  * @brief     enable or disable dhcp
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dhcp failed
@@ -467,8 +467,8 @@ uint8_t ch9121_set_dhcp(ch9121_handle_t *handle, ch9121_bool_t enable)
 
 /**
  * @brief      get chip mac
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[out] *mac points to a mac buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[out] *mac pointer to a mac buffer
  * @return     status code
  *             - 0 success
  *             - 1 get mac failed
@@ -501,9 +501,9 @@ uint8_t ch9121_get_mac(ch9121_handle_t *handle, uint8_t mac[6])
 
 /**
  * @brief      get status
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get status failed
@@ -545,9 +545,9 @@ uint8_t ch9121_get_status(ch9121_handle_t *handle, ch9121_port_t port, ch9121_st
 
 /**
  * @brief     set mode
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] mode is the set mode
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] mode chip mode
  * @return    status code
  *            - 0 success
  *            - 1 set mode failed
@@ -588,9 +588,9 @@ uint8_t ch9121_set_mode(ch9121_handle_t *handle, ch9121_port_t port, ch9121_mode
 
 /**
  * @brief      get mode
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *mode points to a mode buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *mode pointer to a mode buffer
  * @return     status code
  *             - 0 success
  *             - 1 get mode failed
@@ -632,8 +632,8 @@ uint8_t ch9121_get_mode(ch9121_handle_t *handle, ch9121_port_t port, ch9121_mode
 
 /**
  * @brief     set ip address
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] *ip points to an ip buffer
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] *ip pointer to an ip buffer
  * @return    status code
  *            - 0 success
  *            - 1 set ip failed
@@ -670,8 +670,8 @@ uint8_t ch9121_set_ip(ch9121_handle_t *handle, uint8_t ip[4])
 
 /**
  * @brief      get ip address
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[out] *ip points to an ip buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[out] *ip pointer to an ip buffer
  * @return     status code
  *             - 0 success
  *             - 1 get ip failed
@@ -704,8 +704,8 @@ uint8_t ch9121_get_ip(ch9121_handle_t *handle, uint8_t ip[4])
 
 /**
  * @brief     set subnet mask
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] *mask points to a mask buffer
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] *mask pointer to a mask buffer
  * @return    status code
  *            - 0 success
  *            - 1 set subnet mask failed
@@ -742,8 +742,8 @@ uint8_t ch9121_set_subnet_mask(ch9121_handle_t *handle, uint8_t mask[4])
 
 /**
  * @brief      get subnet mask
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[out] *mask points to a mask buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[out] *mask pointer to a mask buffer
  * @return     status code
  *             - 0 success
  *             - 1 get subnet mask failed
@@ -776,8 +776,8 @@ uint8_t ch9121_get_subnet_mask(ch9121_handle_t *handle, uint8_t mask[4])
 
 /**
  * @brief     set gateway
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] *ip points to an ip buffer
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] *ip pointer to an ip buffer
  * @return    status code
  *            - 0 success
  *            - 1 set gateway failed
@@ -814,8 +814,8 @@ uint8_t ch9121_set_gateway(ch9121_handle_t *handle, uint8_t ip[4])
 
 /**
  * @brief      get gateway
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[out] *ip points to an ip buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[out] *ip pointer to an ip buffer
  * @return     status code
  *             - 0 success
  *             - 1 get gateway failed
@@ -848,9 +848,9 @@ uint8_t ch9121_get_gateway(ch9121_handle_t *handle, uint8_t ip[4])
 
 /**
  * @brief     set source port
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] num is the source port
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] num source port
  * @return    status code
  *            - 0 success
  *            - 1 set source port failed
@@ -892,9 +892,9 @@ uint8_t ch9121_set_source_port(ch9121_handle_t *handle, ch9121_port_t port, uint
 
 /**
  * @brief      get source port
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *num points to a source port buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *num pointer to a source port buffer
  * @return     status code
  *             - 0 success
  *             - 1 get source port failed
@@ -936,9 +936,9 @@ uint8_t ch9121_get_source_port(ch9121_handle_t *handle, ch9121_port_t port, uint
 
 /**
  * @brief     set dest ip
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] *ip points to an ip buffer
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] *ip pointer to an ip buffer
  * @return    status code
  *            - 0 success
  *            - 1 set dest ip failed
@@ -982,9 +982,9 @@ uint8_t ch9121_set_dest_ip(ch9121_handle_t *handle, ch9121_port_t port, uint8_t 
 
 /**
  * @brief      get dest ip
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *ip points to an ip buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *ip pointer to an ip buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dest ip failed
@@ -1025,9 +1025,9 @@ uint8_t ch9121_get_dest_ip(ch9121_handle_t *handle, ch9121_port_t port, uint8_t 
 
 /**
  * @brief     set dest port
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] num is the dest port
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] num dest port
  * @return    status code
  *            - 0 success
  *            - 1 set dest port failed
@@ -1069,9 +1069,9 @@ uint8_t ch9121_set_dest_port(ch9121_handle_t *handle, ch9121_port_t port, uint16
 
 /**
  * @brief      get dest port
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *num points to a dest port buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *num pointer to a dest port buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dest port failed
@@ -1113,9 +1113,9 @@ uint8_t ch9121_get_dest_port(ch9121_handle_t *handle, ch9121_port_t port, uint16
 
 /**
  * @brief     set uart baud
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] baud is the set baud
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] baud chip baud
  * @return    status code
  *            - 0 success
  *            - 1 set uart baud failed
@@ -1159,9 +1159,9 @@ uint8_t ch9121_set_uart_baud(ch9121_handle_t *handle, ch9121_port_t port, uint32
 
 /**
  * @brief      get uart baud
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *baud points to a baud buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *baud pointer to a baud buffer
  * @return     status code
  *             - 0 success
  *             - 1 get uart baud failed
@@ -1204,11 +1204,11 @@ uint8_t ch9121_get_uart_baud(ch9121_handle_t *handle, ch9121_port_t port, uint32
 
 /**
  * @brief     set uart config
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] data_bit is the uart data bit
- * @param[in] parity is the uart parity
- * @param[in] stop_bit is the uart stop bit
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] data_bit uart data bit
+ * @param[in] parity uart parity
+ * @param[in] stop_bit uart stop bit
  * @return    status code
  *            - 0 success
  *            - 1 set uart config failed
@@ -1251,11 +1251,11 @@ uint8_t ch9121_set_uart_config(ch9121_handle_t *handle, ch9121_port_t port, uint
 
 /**
  * @brief      get uart config
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *data_bit points to a uart data bit buffer
- * @param[out] *parity points to a uart parity buffer
- * @param[out] *stop_bit points to a uart stop bit buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *data_bit pointer to a uart data bit buffer
+ * @param[out] *parity pointer to a uart parity buffer
+ * @param[out] *stop_bit pointer to a uart stop bit buffer
  * @return     status code
  *             - 0 success
  *             - 1 get uart config failed
@@ -1299,9 +1299,9 @@ uint8_t ch9121_get_uart_config(ch9121_handle_t *handle, ch9121_port_t port, uint
 
 /**
  * @brief     set uart timeout
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] timeout is the uart timeout
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] timeout uart timeout
  * @return    status code
  *            - 0 success
  *            - 1 set uart timeout failed
@@ -1345,9 +1345,9 @@ uint8_t ch9121_set_uart_timeout(ch9121_handle_t *handle, ch9121_port_t port, uin
 
 /**
  * @brief      get uart timeout
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  port is the set port
- * @param[out] *timeout points to a uart timeout buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  port input port
+ * @param[out] *timeout pointer to a uart timeout buffer
  * @return     status code
  *             - 0 success
  *             - 1 get uart timeout failed
@@ -1387,9 +1387,9 @@ uint8_t ch9121_get_uart_timeout(ch9121_handle_t *handle, ch9121_port_t port, uin
 
 /**
  * @brief      convert the uart timeout to the register raw data
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  ms is the timeout
- * @param[out] *reg points to a register raw buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  ms timeout
+ * @param[out] *reg pointer to a register raw buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -1414,9 +1414,9 @@ uint8_t ch9121_uart_timeout_convert_to_register(ch9121_handle_t *handle, uint16_
 
 /**
  * @brief      convert the register raw data to the offset
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  reg is the register raw data
- * @param[out] *ms points to an ms buffer
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  reg register raw data
+ * @param[out] *ms pointer to an ms buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -1441,9 +1441,9 @@ uint8_t ch9121_uart_timeout_convert_to_data(ch9121_handle_t *handle, uint8_t reg
 
 /**
  * @brief     enable or disable random source port number
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set source port random failed
@@ -1484,9 +1484,9 @@ uint8_t ch9121_set_source_port_random(ch9121_handle_t *handle, ch9121_port_t por
 
 /**
  * @brief     set uart buffer length
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 set uart buffer length failed
@@ -1530,9 +1530,9 @@ uint8_t ch9121_set_uart_buffer_length(ch9121_handle_t *handle, ch9121_port_t por
 
 /**
  * @brief     enable or disable uart auto flush
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] port is the set port
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] port input port
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set uart flush failed
@@ -1573,8 +1573,8 @@ uint8_t ch9121_set_uart_flush(ch9121_handle_t *handle, ch9121_port_t port, ch912
 
 /**
  * @brief     enable or disable uart port2
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set port2 failed
@@ -1608,8 +1608,8 @@ uint8_t ch9121_set_port2(ch9121_handle_t *handle, ch9121_bool_t enable)
 
 /**
  * @brief     enable or disable disconnect with no rj45
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set disconnect with no rj45 failed
@@ -1643,8 +1643,8 @@ uint8_t ch9121_set_disconnect_with_no_rj45(ch9121_handle_t *handle, ch9121_bool_
 
 /**
  * @brief     set chip domain
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] *domain points to a domain buffer
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] *domain pointer to a domain buffer
  * @return    status code
  *            - 0 success
  *            - 1 set domain failed
@@ -1685,7 +1685,7 @@ uint8_t ch9121_set_domain(ch9121_handle_t *handle, char *domain)
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a ch9121 handle structure
+ * @param[in] *handle pointer to a ch9121 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 uart initialization failed
@@ -1827,7 +1827,7 @@ uint8_t ch9121_init(ch9121_handle_t *handle)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a ch9121 handle structure
+ * @param[in] *handle pointer to a ch9121 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 uart deinit failed
@@ -1882,9 +1882,9 @@ uint8_t ch9121_deinit(ch9121_handle_t *handle)
 
 /**
  * @brief     write data
- * @param[in] *handle points to a ch9121 handle structure
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to a ch9121 handle structure
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -1921,9 +1921,9 @@ uint8_t ch9121_write(ch9121_handle_t *handle, uint8_t *buf, uint16_t len)
 
 /**
  * @brief         read data
- * @param[in]     *handle points to a ch9121 handle structure
- * @param[out]    *buf points to a data buffer
- * @param[in,out] *len points to a length buffer
+ * @param[in]     *handle pointer to a ch9121 handle structure
+ * @param[out]    *buf pointer to a data buffer
+ * @param[in,out] *len pointer to a length buffer
  * @return        status code
  *                - 0 success
  *                - 1 read failed
@@ -1958,13 +1958,13 @@ uint8_t ch9121_read(ch9121_handle_t *handle, uint8_t *buf, uint16_t *len)
 
 /**
  * @brief      set command
- * @param[in]  *handle points to a ch9121 handle structure
- * @param[in]  *param points to a param buffer
- * @param[in]  len is the param len
- * @param[out] *out points to an out buffer
- * @param[in]  out_len is the out len
- * @param[in]  pre_delay is the pre delay in ms
- * @param[in]  timeout is the wait timeout in ms
+ * @param[in]  *handle pointer to a ch9121 handle structure
+ * @param[in]  *param pointer to a param buffer
+ * @param[in]  len param length
+ * @param[out] *out pointer to an out buffer
+ * @param[in]  out_len output length
+ * @param[in]  pre_delay delay in ms
+ * @param[in]  timeout timeout in ms
  * @return     status code
  *             - 0 success
  *             - 1 set command failed
@@ -1998,7 +1998,7 @@ uint8_t ch9121_set_command(ch9121_handle_t *handle,
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a ch9121 info structure
+ * @param[out] *info pointer to a ch9121 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

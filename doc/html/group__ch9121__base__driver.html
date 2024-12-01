@@ -490,7 +490,7 @@ Functions</h2></td></tr>
 <p>config and reset the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -526,7 +526,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -565,7 +565,7 @@ Functions</h2></td></tr>
 <p>exit </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -617,9 +617,9 @@ Functions</h2></td></tr>
 <p>get dest ip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -671,9 +671,9 @@ Functions</h2></td></tr>
 <p>get dest port </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>points to a dest port buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>pointer to a dest port buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -719,8 +719,8 @@ Functions</h2></td></tr>
 <p>get gateway </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -766,8 +766,8 @@ Functions</h2></td></tr>
 <p>get ip address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -813,8 +813,8 @@ Functions</h2></td></tr>
 <p>get chip mac </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mac</td><td>points to a mac buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mac</td><td>pointer to a mac buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -866,9 +866,9 @@ Functions</h2></td></tr>
 <p>get mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>points to a mode buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>pointer to a mode buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -920,9 +920,9 @@ Functions</h2></td></tr>
 <p>get source port </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>points to a source port buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>pointer to a source port buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -974,9 +974,9 @@ Functions</h2></td></tr>
 <p>get status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1022,8 +1022,8 @@ Functions</h2></td></tr>
 <p>get subnet mask </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mask</td><td>points to a mask buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mask</td><td>pointer to a mask buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1075,9 +1075,9 @@ Functions</h2></td></tr>
 <p>get uart baud </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*baud</td><td>points to a baud buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*baud</td><td>pointer to a baud buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1141,11 +1141,11 @@ Functions</h2></td></tr>
 <p>get uart config </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*data_bit</td><td>points to a uart data bit buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*parity</td><td>points to a uart parity buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*stop_bit</td><td>points to a uart stop bit buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*data_bit</td><td>pointer to a uart data bit buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*parity</td><td>pointer to a uart parity buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*stop_bit</td><td>pointer to a uart stop bit buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1197,9 +1197,9 @@ Functions</h2></td></tr>
 <p>get uart timeout </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*timeout</td><td>points to a uart timeout buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*timeout</td><td>pointer to a uart timeout buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1245,8 +1245,8 @@ Functions</h2></td></tr>
 <p>get version </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*version</td><td>points to a version buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*version</td><td>pointer to a version buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1282,7 +1282,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to a ch9121 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to a ch9121 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1316,7 +1316,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1371,9 +1371,9 @@ Functions</h2></td></tr>
 <p>read data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*len</td><td>points to a length buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*len</td><td>pointer to a length buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1409,7 +1409,7 @@ Functions</h2></td></tr>
 <p>reset the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1445,7 +1445,7 @@ Functions</h2></td></tr>
 <p>save to eeprom </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1497,9 +1497,9 @@ Functions</h2></td></tr>
 <p>set dest ip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1551,9 +1551,9 @@ Functions</h2></td></tr>
 <p>set dest port </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the dest port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>dest port </td></tr>
   </table>
   </dd>
 </dl>
@@ -1599,8 +1599,8 @@ Functions</h2></td></tr>
 <p>enable or disable dhcp </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -1646,8 +1646,8 @@ Functions</h2></td></tr>
 <p>enable or disable disconnect with no rj45 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -1693,8 +1693,8 @@ Functions</h2></td></tr>
 <p>set chip domain </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*domain</td><td>points to a domain buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*domain</td><td>pointer to a domain buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1740,8 +1740,8 @@ Functions</h2></td></tr>
 <p>set gateway </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1787,8 +1787,8 @@ Functions</h2></td></tr>
 <p>set ip address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1840,9 +1840,9 @@ Functions</h2></td></tr>
 <p>set mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the set mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>chip mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -1888,8 +1888,8 @@ Functions</h2></td></tr>
 <p>enable or disable uart port2 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -1941,9 +1941,9 @@ Functions</h2></td></tr>
 <p>set source port </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the source port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>source port </td></tr>
   </table>
   </dd>
 </dl>
@@ -1995,9 +1995,9 @@ Functions</h2></td></tr>
 <p>enable or disable random source port number </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -2043,8 +2043,8 @@ Functions</h2></td></tr>
 <p>set subnet mask </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*mask</td><td>points to a mask buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*mask</td><td>pointer to a mask buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2096,9 +2096,9 @@ Functions</h2></td></tr>
 <p>set uart baud </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">baud</td><td>is the set baud </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">baud</td><td>chip baud </td></tr>
   </table>
   </dd>
 </dl>
@@ -2150,9 +2150,9 @@ Functions</h2></td></tr>
 <p>set uart buffer length </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>
@@ -2216,11 +2216,11 @@ Functions</h2></td></tr>
 <p>set uart config </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data_bit</td><td>is the uart data bit </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">parity</td><td>is the uart parity </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">stop_bit</td><td>is the uart stop bit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_bit</td><td>uart data bit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parity</td><td>uart parity </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_bit</td><td>uart stop bit </td></tr>
   </table>
   </dd>
 </dl>
@@ -2272,9 +2272,9 @@ Functions</h2></td></tr>
 <p>enable or disable uart auto flush </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -2326,9 +2326,9 @@ Functions</h2></td></tr>
 <p>set uart timeout </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the set port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>is the uart timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>input port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>uart timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -2380,9 +2380,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the offset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*ms</td><td>points to an ms buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*ms</td><td>pointer to an ms buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2433,9 +2433,9 @@ Functions</h2></td></tr>
 <p>convert the uart timeout to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>is the timeout </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>timeout </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2486,9 +2486,9 @@ Functions</h2></td></tr>
 <p>write data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to a ch9121 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to a ch9121 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
   </table>
   </dd>
 </dl>

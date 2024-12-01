@@ -62,8 +62,8 @@ uint8_t ch9121_interface_uart_deinit(void)
 
 /**
  * @brief      interface uart read
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -88,8 +88,8 @@ uint8_t ch9121_interface_uart_flush(void)
 
 /**
  * @brief     interface uart write
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of the data buffer
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of the data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -126,7 +126,7 @@ uint8_t ch9121_interface_reset_gpio_deinit(void)
 
 /**
  * @brief     interface reset gpio write
- * @param[in] data is the set data
+ * @param[in] data set data
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -163,7 +163,7 @@ uint8_t ch9121_interface_cfg_gpio_deinit(void)
 
 /**
  * @brief     interface cfg gpio write
- * @param[in] data is the set data
+ * @param[in] data set data
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -176,7 +176,7 @@ uint8_t ch9121_interface_cfg_gpio_write(uint8_t data)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void ch9121_interface_delay_ms(uint32_t ms)
@@ -186,7 +186,7 @@ void ch9121_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void ch9121_interface_debug_print(const char *const fmt, ...)
