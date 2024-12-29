@@ -397,14 +397,14 @@ Functions</h2></td></tr>
 <p>basic example config </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uart_port</td><td>is the uart port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the set mode </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>points to an ip buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>is the local port </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*mask</td><td>points to a mask buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*gateway</td><td>points to a gateway buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*dest_ip</td><td>points to a dest ip buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>is the dest port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uart_port</td><td>uart port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>chip mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*ip</td><td>pointer to an ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>local port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*mask</td><td>pointer to a mask buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*gateway</td><td>pointer to a gateway buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*dest_ip</td><td>pointer to a dest ip buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dest_port</td><td>dest port </td></tr>
   </table>
   </dd>
 </dl>
@@ -504,8 +504,8 @@ Functions</h2></td></tr>
 <p>basic example read data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*len</td><td>points to a length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*len</td><td>pointer to a length buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -549,8 +549,8 @@ Functions</h2></td></tr>
 <p>basic example write data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
   </table>
   </dd>
 </dl>
