@@ -10,7 +10,7 @@
 
 CH9121 is a chip realizing transparent transmission between network and UART. It integrates TCP/IP protocol stack, which can realize bidirectional transparent transmission between network data packets and serial data. It has 4 working modes: TCP CLIENT, TCP SERVER, UDP CLIENT and UDP SERVER. The serial baud rate can be up to 921600bps. It can be easily configured by upper computer software or serial commands, which is convenient and quick.
 
-LibDriver CH9121 is the full function driver of CH9121 launched by LibDriver.It provides tcp server, tcp client, udp server, udp client and other functions. LibDriver is MISRA compliant.
+LibDriver CH9121 is a full-featured driver of CH9121 launched by LibDriver.It provides tcp server, tcp client, udp server, udp client and other functions. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
