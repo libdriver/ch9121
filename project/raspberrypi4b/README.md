@@ -6,7 +6,7 @@ Board Name: Raspberry Pi 4B.
 
 UART Pin: TX/RX GPIO14/GPIO15.
 
-GPIO Pin: RESET/CFG GPIO27/GPIO17.
+GPIO Pin: RSTI/CFG GPIO27/GPIO17.
 
 ### 2. Install
 
@@ -172,6 +172,8 @@ ch9121: min temperature is -40.0C.
 
 ch9121: TX connected to GPIO15(BCM).
 ch9121: RX connected to GPIO14(BCM).
+ch9121: RSTI connected to GPIO27(BCM).
+ch9121: CFG connected to GPIO17(BCM).
 ```
 
 ```shell
