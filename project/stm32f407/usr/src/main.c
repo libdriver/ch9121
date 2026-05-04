@@ -475,8 +475,8 @@ uint8_t ch9121(uint8_t argc, char **argv)
         /* print pin connection */
         ch9121_interface_debug_print("ch9121: TX connected to GPIOA PIN3.\n");
         ch9121_interface_debug_print("ch9121: RX connected to GPIOA PIN2.\n");
-        ch9121_interface_debug_print("ch9121: RESET connected to GPIOA PIN0.\n");
-        ch9121_interface_debug_print("ch9121: CFG_EN connected to GPIOA PIN8.\n");
+        ch9121_interface_debug_print("ch9121: RSTI connected to GPIOA PIN0.\n");
+        ch9121_interface_debug_print("ch9121: CFG connected to GPIOA PIN8.\n");
         
         return 0;
     }

@@ -1044,7 +1044,6 @@ uint8_t ch9121_get_dest_ip(ch9121_handle_t *handle, ch9121_port_t port, uint8_t 
         return 1;                                                     /* return error */
     }
     
-    
     return 0;                                                         /* success return 0 */
 }
 

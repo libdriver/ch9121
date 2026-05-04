@@ -518,7 +518,6 @@ uint8_t ch9121_set_gateway(ch9121_handle_t *handle, uint8_t ip[4]);
  */
 uint8_t ch9121_get_gateway(ch9121_handle_t *handle, uint8_t ip[4]);
 
-
 /**
  * @brief      get status
  * @param[in]  *handle pointer to a ch9121 handle structure

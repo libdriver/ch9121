@@ -10,7 +10,7 @@ UART Pin: TX/RX PA9/PA10.
 
 UART2 Pin: TX/RX PA2/PA3.
 
-GPIO Pin: RESET/CFG_EN PA0/PA8.
+GPIO Pin: RSTI/CFG PA0/PA8.
 
 ### 2. Development and Debugging
 
@@ -123,8 +123,8 @@ ch9121 -p
 
 ch9121: TX connected to GPIOA PIN3.
 ch9121: RX connected to GPIOA PIN2.
-ch9121: RESET connected to GPIOA PIN0.
-ch9121: CFG_EN connected to GPIOA PIN8.
+ch9121: RSTI connected to GPIOA PIN0.
+ch9121: CFG connected to GPIOA PIN8.
 ```
 
 ```shell
