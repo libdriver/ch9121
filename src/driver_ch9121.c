@@ -994,8 +994,8 @@ uint8_t ch9121_set_dest_ip(ch9121_handle_t *handle, ch9121_port_t port, uint8_t 
     }
     cmd[1] = ip[0];                                                  /* set ip[0] */
     cmd[2] = ip[1];                                                  /* set ip[1] */
-    cmd[3] = ip[2];                                                  /* set ip[0] */
-    cmd[4] = ip[3];                                                  /* set ip[1] */
+    cmd[3] = ip[2];                                                  /* set ip[2] */
+    cmd[4] = ip[3];                                                  /* set ip[3] */
     if (a_ch9121_write_check(handle, cmd, 5,
                              CH9121_UART_PRE_DELAY, 1000) != 0)      /* write dest ip */
     {
